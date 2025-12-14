@@ -1,0 +1,81 @@
+/* Global styles for the body */
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Styles for the calculator display area */
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: hsl(0, 0%, 15%);
+}
+
+
+/* Styles for a circular black button with white text */
+button{
+    background-color: hsl(0, 0%, 30%);
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+     cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: hsl(0, 0%, 45%);
+}
+
+/* Active effect for buttons */
+button:active {
+    background-color: hsl(0, 0%, 20%);
+}
+
+/* Styles for operator buttons */
+.operator-button {
+    background-color: hwb(30 0% 28%);
+}
+
+/* Hover effect for operator buttons */
+.operator-button:hover {
+    background-color: lch(56.24% 42.03 67.6);
+}
+
+/* Active effect for operator buttons */
+.operator-button:active {
+    background-color: lab(60.85% 9 25.1);
+}
+
+/* Styles for the calculator keys container using CSS Grid */
+#calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    max-width: 400px;
+} 
+
+/* Styles for the main calculator container */
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hwb(0 20% 80%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
